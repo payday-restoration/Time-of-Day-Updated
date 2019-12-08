@@ -16,8 +16,8 @@ ToD.DefaultValues = {
 	["apply_ambient/fog_max_range"] = {day_value = 500000, night_value = 500000, key = "20458ffc6d388c0f"},
 	["apply_ambient/fog_start_color"] = {day_value = Vector3(0.803, 0.894, 1), night_value = Vector3(0.05, 0.05, 0.05), key = "ac403b8f792138ad"},
 	["apply_ambient/bloom_threshold"] = {day_value = 0, night_value = 0, key = "77dc69a074e321a0"},
-	["bloom_combine/bloom_intensity"] = {day_value = 0, night_value = 0, key = "1cc4f7bdeb08ef7e"},
-	["bloom_combine/lense_intensity"] = {day_value = 0, night_value = 0, key = "58ed74c64253d4df"}
+	["bloom_lense/bloom_intensity"] = {day_value = 0, night_value = 0, key = "8084cfe272c88170"},
+	["bloom_lense/lense_intensity"] = {day_value = 0, night_value = 0, key = "35d14c31f470afd8"}
 }
 
 ToD.HeistSpecificValues = {
