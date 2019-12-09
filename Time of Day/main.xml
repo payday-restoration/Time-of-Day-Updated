@@ -4,7 +4,7 @@
         <!-- <hook file="HeistFix.lua" source_file="lib/tweak_data/levelstweakdata"/> -->
         <hook file="environmenteffectsmanager.lua" source_file="lib/managers/environmenteffectsmanager"/>
     </Hooks>
-    <AssetUpdates id="ToDUpdate" version="1.3">
-        <custom_provider version_api_url="https://github.com/payday-restoration/Time-of-Day-Updated/version.txt" download_url="https://github.com/payday-restoration/Time-of-Day-Updated/ToD.zip"/>
+    <AssetUpdates id="ToDUpdate" version="1.4">
+        <custom_provider version_api_url="https://github.com/payday-restoration/Time-of-Day-Updated/raw/master/version.txt" download_url="https://github.com/payday-restoration/Time-of-Day-Updated/raw/master/ToD.zip"/>
     </AssetUpdates>
 </mod>
