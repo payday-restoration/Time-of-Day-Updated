@@ -2,10 +2,13 @@ local ids_rain_post_processor = Idstring("rain_post_processor")
 local ids_rain_ripples = Idstring("rain_ripples")
 local ids_rain_off = Idstring("rain_off")
 local ripple_fix = false
-local map = Global.level_data.level_id
+if not Global.load_level then 
+	return
+end
+local map = Global.game_settings.level_id
 --lazy terrible fix for these levels having droplets indoors
 --causes droplets to pop in but what the fuck else can i do?
-if map == "fish" or map == "arena" or map == "mus" or map == "red2" or map == "pbr" or map == "big" or map == "hox_2" then
+if map == "fish" or map == "arena" or map == "mus" or map == "red2" or map == "pbr" or map == "big" or map == "hox_2" or map == "vit" then
 	ids_rain_off = Idstring("rain_inside")
 	ripple_fix = true
 end
