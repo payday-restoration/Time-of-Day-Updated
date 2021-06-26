@@ -15,9 +15,10 @@ ToD.DefaultValues = {
 	["apply_ambient/fog_min_range"] = {day_value = 806, night_value = 806, key = "2c8c522e139b16"},
 	["apply_ambient/fog_max_range"] = {day_value = 500000, night_value = 500000, key = "20458ffc6d388c0f"},
 	["apply_ambient/fog_start_color"] = {day_value = Vector3(0.803, 0.894, 1), night_value = Vector3(0.05, 0.05, 0.05), key = "ac403b8f792138ad"},
-	["apply_ambient/bloom_threshold"] = {day_value = 0, night_value = 0, key = "77dc69a074e321a0"},
-	["bloom_lense/bloom_intensity"] = {day_value = 0, night_value = 0, key = "8084cfe272c88170"},
-	["bloom_lense/lense_intensity"] = {day_value = 0, night_value = 0, key = "35d14c31f470afd8"}
+	["apply_ambient/bloom_threshold"] = {day_value = 0, night_value = 0, key = "6174ec93d0eeeacd"},
+	["bloom_lense/bloom_intensity"] = {day_value = 0, night_value = 0, key = "457904ce74fa1005"},
+	["bloom_lense/lense_intensity"] = {day_value = 0, night_value = 0, key = "48b53ca3bf280008"},
+	["bloom_lense/bloom_blur_size"] = {day_value = 0, night_value = 0, key = "e36a12365a151b14"}
 }
 
 ToD.HeistSpecificValues = {
@@ -2219,7 +2220,7 @@ ToD.HeistSpecificValues = {
 			}
 		},
 		underlays = {
-			[1] = {path = "core/environments/skies/sky_1931_low_sun/sky_1931_low_sun", start_time = 3, length = 18, variable_overwrite = {}, global_texture = "environments/cubemaps/cubemap_outdoor_peta_2"},
+			[1] = {path = "core/environments/skies/sky_1931_low_sun/sky_1931_low_sun", start_time = 3, length = 18, variable_overwrite = {}, global_texture = "environments/cubemaps/cubemap_outdoor_peta_2", global_world_overlay_texture = "environments/world_textures/peta/pta_terrain_overlay_df", global_world_overlay_mask_texture = "environments/world_textures/peta/pta_terrain_weight_df"},
 			[2] = {path = "core/environments/skies/sky_2335_night_moon/sky_2335_night_moon", start_time = 21, length = 6, variable_overwrite = {}, global_texture = "environments/cubemaps/cubemap_night_lcm"}
 		},
 		start_at_day = true
@@ -2745,11 +2746,11 @@ ToD.HeistSpecificValues = {
 	["run"] = {
 		variables = {
 			["others/sun_ray_color_scale"] = {
-				day_value = 2.19,
+				day_value = 2.194,
 				night_value = 0.05
 			},
 			["others/sun_ray_color"] = {
-				day_value = Vector3(0.71, 0.69, 0.58),
+				day_value = Vector3(1, 0.5921569, 0.3019608),
 				night_value = Vector3(0.44, 0.44, 0.44)
 			},
 			["apply_ambient/fog_min_range"] = {
@@ -2757,11 +2758,11 @@ ToD.HeistSpecificValues = {
 				night_value = 0
 			},
 			["apply_ambient/ambient_color_scale"] = {
-				day_value = 0.32,
+				day_value = 0.324,
 				night_value = 0.05
 			},
 			["apply_ambient/fog_max_range"] = {
-				day_value = 50000,
+				day_value = 90741,
 				night_value = 50000
 			},
 			["apply_ambient/fog_start_color"] = {
@@ -2769,17 +2770,33 @@ ToD.HeistSpecificValues = {
 				night_value = Vector3(0.18, 0.15, 0.15)
 			},
 			["apply_ambient/ambient_scale"] = {
-				day_value = 0.65,
+				day_value = 0.647,
 				night_value = 0
 			},
 			["apply_ambient/ambient_color"] = {
-				day_value = Vector3(0.8, 0.8, 0.8),
+				day_value = Vector3(0.16643508, 0.2193917, 0.27559054),
 				night_value = Vector3(0.8, 0.8, 0.8)
 			},
 			["apply_ambient/fog_far_low_color"] = {
 				day_value = Vector3(0.35, 0.39, 0.45),
 				night_value = Vector3(0.05, 0.05, 0.05)
-			}
+			}--,
+			-- ["apply_ambient/bloom_threshold"] = {
+			-- 	day_value = 0.421,
+			-- 	night_value = 0
+			-- },
+			-- ["bloom_lense/bloom_intensity"] = {
+			-- 	day_value = 0.753,
+			-- 	night_value = 0
+			-- },
+			-- ["bloom_lense/lense_intensity"] = {
+			-- 	day_value = 0.308,
+			-- 	night_value = 0
+			-- },
+			-- ["bloom_lense/bloom_blur_size"] = {
+			-- 	day_value = 1,
+			-- 	night_value = 0
+			-- }
 		},
 		[1] = {path = "core/environments/skies/sky_1224_clear_sky/sky_1224_clear_sky", start_time = 5, length = 18, variable_overwrite = {
 		["sky/color0_scale"] = {

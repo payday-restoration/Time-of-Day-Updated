@@ -1,6 +1,15 @@
 {
 	"name" : "Time of day",
 	"description" : "Time of Day is a mod which gradually advances the time inside the heist as the heist goes on. For example, you may go into the safehouse and it will be night-time, after about 20 minutes it will be day-time. It achieves this through the use of Beardlib which allows it to easily modify the values of the game's environment.",
-	"author" : "ViciousWalrus & GREAT BIG BUSHY BEARD",
-	"blt_version": 2
+	"author" : "ViciousWalrus & GREAT BIG BUSHY BEARD, Test1",
+	"blt_version": 2,
+	"version" : "1.5",
+	"updates": [
+        {
+            "identifier": "ToDUpdated",
+            "host": {
+				"meta": "https://raw.githubusercontent.com/steam-test1/PD2Updates/master/updates_metas/meta_ToDUpdated.json"
+			}
+        }
+    ],
 }
